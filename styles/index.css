@@ -17,6 +17,14 @@
     left: 0;
 }
 
+.txt-line{
+    width: 100px;
+    height: 5px;
+    background-color: #c79237c9;
+    position: relative;
+    left: 46.8%;
+}
+
 .overlay1{
     background-color: #2f2e2dc9;
     width: 50%;
@@ -175,6 +183,20 @@ ul{
 .flex-center{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.who-we-are{
+    margin: 80px 0px;
+}
+
+.who-we-are .heading{
+    text-align: center;
+}
+
+.heading-txt{
+    text-align: center;
+    color: #a1a1a1;;
 }
 
 
@@ -190,6 +212,11 @@ ul{
     .bg h1{
         font-size: 16px;
     }
+
+    
+    .txt-line{
+        left: 43%;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -203,6 +230,12 @@ ul{
 
     .item1,.item2{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .txt-line{
+        left: 40%;
     }
 }
 
