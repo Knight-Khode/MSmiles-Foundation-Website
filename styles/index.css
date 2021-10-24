@@ -8,6 +8,33 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.overlay{
+    background-color: #c79237c9;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay1{
+    background-color: #2f2e2dc9;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay2{
+    background-color: #2d3b2ad4;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 a{
     text-decoration: none;
 }
@@ -73,7 +100,6 @@ ul{
 }
 
 #navbar{
-    background-color: red;
     background-color: rgb(232 166 0 / 90%);
 }
 
@@ -87,6 +113,8 @@ ul{
 
 .nav-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-list li{
@@ -96,10 +124,90 @@ ul{
 .nav-list li a{
     color: #fff;
     transition: all ease-in-out 0.5s;
+    display: inline-block;
 }
 
 .nav-list li a:hover{
     font-weight: bolder;
+}
+
+/*slider*/
+.img-show{
+    width: 100vw;
+}
+
+.carousel{
+   margin-bottom: 70px;
+}
+
+.carousel-item {
+    /*height: 70vh;*/
+}
+
+.bg1{
+    background-image: url("/img/c4.jpg");
+}
+
+.bg2{
+    background-image: url("/img/c5.jpg");
+}
+
+.bg3{
+    background-image: url("/img/c6.jpg");
+}
+
+.bg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    margin-right: 30px;
+    position: relative;
+}
+
+.bg h1{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.img-show .row{
+    width: 100.8vw;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 890px) {
+    .image-row .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 17px;
+        grid-row-gap: 12px;
+    }
+
+    .bg h1{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .image-row .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 17px;
+        grid-row-gap: 12px;
+    }
+
+    .item1,.item2{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 525px) {
