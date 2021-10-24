@@ -140,10 +140,6 @@ ul{
    margin-bottom: 70px;
 }
 
-.carousel-item {
-    /*height: 70vh;*/
-}
-
 .bg1{
     background-image: url("/img/c4.jpg");
 }
@@ -173,13 +169,13 @@ ul{
 
 .img-show .row{
     width: 100.8vw;
+    margin-bottom: 50px;
 }
 
 .flex-center{
     display: flex;
     align-items: center;
 }
-
 
 
 @media only screen and (max-width: 890px) {
