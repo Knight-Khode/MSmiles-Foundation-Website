@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
 
 *{
     margin: 0px;
@@ -6,6 +7,24 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.curl{
+    font-family: 'Dancing Script', cursive;
+}
+
+.lg{
+    font-size: 50px;
+}
+
+/*header*/
 
 #header{
     background-color: #000;
@@ -44,6 +63,45 @@
     color: rgba(187, 185, 185, 0.5);
 }
 
+/*Navbar*/
+#logo a{
+    color: #fff;
+}
+
+#logo h1{
+    font-size: 40px;
+}
+
+#navbar{
+    background-color: red;
+    background-color: rgb(232 166 0 / 90%);
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+    margin-right: 20px;
+}
+
+.nav-list li a{
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.nav-list li a:hover{
+    font-weight: bolder;
+}
+
 @media only screen and (max-width: 525px) {
     #header-contact{
         flex-direction: column;
@@ -51,6 +109,22 @@
     
     #header-right{
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar-content{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navbar-content{
+        flex-direction: column;
+    }
+
+    .nav-list li a{
+        font-size: 11px;
     }
 }
 
@@ -73,4 +147,15 @@
         margin-top: 0px;
     }
     
+}
+
+@media only screen and (max-width: 250px){
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list li a{
+        font-size: 14px;
+    }
 }
